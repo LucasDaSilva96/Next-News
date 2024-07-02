@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang='en' data-theme='forest'>
       <body className={inter.className}>
         <MainHeader />
-        <div className='container py-4'>{children}</div>
+        <div className='container mx-auto py-4 px-2'>{children}</div>
       </body>
     </html>
   );

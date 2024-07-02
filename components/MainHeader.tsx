@@ -5,9 +5,11 @@ import React from 'react';
 
 export default function MainHeader() {
   return (
-    <header className='navbar bg-primary navbar-center'>
-      <Link href='/'>Home</Link>
-      <Link href='/news' className='ml-auto'>
+    <header className='navbar navbar-center'>
+      <Link className='py-1 px-1' href='/'>
+        NextNews
+      </Link>
+      <Link className='py-1 px-1 ml-auto' href='/news'>
         News
       </Link>
     </header>

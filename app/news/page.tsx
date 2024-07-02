@@ -1,13 +1,13 @@
-import Link from 'next/link';
 import React from 'react';
+import { getNews } from '@/lib/news';
+import NewsPreviewCard from '@/components/NewsPreviewCard';
 
-export default function page() {
+export default async function NewsPage() {
+  const news = await getNews();
   return (
     <section className='w-full h-full'>
-      <aside className='container flex flex-col gap-3'>
-        <Link href='/news/news1'>News page 1</Link>
-        <Link href='/news/news2'>News page 2</Link>
-        <Link href='/news/news3'>News page 3</Link>
+      <aside className='container flex items-center flex-wrap gap-4'>
+        <NewsPreviewCard news={news} />
       </aside>
     </section>
   );
