@@ -14,7 +14,7 @@ type Props = {
 
 export default function NewsPreviewCard({ news }: Props) {
   return (
-    <aside className='container flex items-center flex-wrap gap-4'>
+    <aside className='container flex items-center flex-wrap gap-4 w-full'>
       {news.map((news) => (
         <Link key={news.id} href={`/news/${news.id}`}>
           <div className='card lg:card-side bg-base-100 shadow-xl'>

@@ -14,9 +14,8 @@ export default function ArchiveLayout({ archive, latest }: Props) {
           {archive}
         </section>
         <div className='divider'>OR</div>
-        <section className='card bg-base-300 rounded-box flex flex-col gap-2 items-center py-2'>
-          {latest}
-        </section>
+        <h1 className='text-center font-bold text-3xl py-4'>Latest News</h1>
+        <section className=''>{latest}</section>
       </div>
     </div>
   );

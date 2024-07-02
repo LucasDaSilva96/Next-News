@@ -10,7 +10,7 @@ export default function Error() {
           <h2 className='card-title'>Error!</h2>
           <p>Something when wrong...</p>
           <div className='card-actions justify-center'>
-            <BackBtn url='/' />
+            <BackBtn />
           </div>
         </div>
       </div>

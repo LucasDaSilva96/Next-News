@@ -1,15 +1,13 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
-type Props = {
-  url: string;
-};
-
-export default function BackBtn({ url }: Props) {
+export default function BackBtn() {
+  const router = useRouter();
   return (
-    <Link href={url} className='btn btn-primary'>
+    <button className='btn btn-primary btn-sm' onClick={() => router.back()}>
       Back
-    </Link>
+    </button>
   );
 }
