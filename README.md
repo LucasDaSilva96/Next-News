@@ -2,9 +2,9 @@
 
 This is a project that utilizes Next.js to create a news website. It aims to provide a simple and efficient way to display news articles to users.
 
-![Preview image 1](/images/preview/Next-News-1.png)
-![Preview image 2](/images/preview/Next-News-2.png)
-![Preview image 3](/images/preview/Next-News-3.png)
+![Preview image 1](/public/images/preview/Next-News-1.png)
+![Preview image 2](/public/images/preview/Next-News-2.png)
+![Preview image 3](/public/images/preview/Next-News-3.png)
 
 ## Features
 
