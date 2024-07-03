@@ -1,9 +1,9 @@
 import NewsPreviewCard from '@/components/NewsPreviewCard';
-import { getLatestNews } from '@/lib/news';
+import { getLatestNews, News } from '@/lib/news';
 import React from 'react';
 
 export default async function DefaultLatestPage() {
-  const latestNews = await getLatestNews();
+  const latestNews = (await getLatestNews()) as News[];
 
   if (!latestNews || latestNews.length === 0)
     return (

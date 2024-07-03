@@ -1,15 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { News } from '@/lib/news';
 
 type Props = {
-  news: {
-    id: string;
-    title: string;
-    image: string;
-    content: string;
-    date: string;
-  }[];
+  news: News[];
 };
 
 export default function NewsPreviewCard({ news }: Props) {
