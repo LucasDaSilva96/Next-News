@@ -28,6 +28,11 @@ const MONTHS = [
   'December',
 ];
 
+export const meadata = {
+  title: 'Archive',
+  description: 'Archive of all news articles',
+};
+
 export default async function FilteredNewsPage({
   params,
 }: YearArchivePageProps) {

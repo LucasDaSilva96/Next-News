@@ -20,7 +20,7 @@ export default function Layout({
     <html lang='en' data-theme='forest'>
       <body className={inter.className}>
         <MainHeader />
-        <div className='container mx-auto py-4 px-2 relative w-full h-full'>
+        <div className='container mx-auto py-4 px-2 relative w-full h-full no-scrollbar'>
           {children}
         </div>
       </body>

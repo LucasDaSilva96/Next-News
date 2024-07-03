@@ -9,6 +9,20 @@ type Props = {
   params: { id: string };
 };
 
+export async function generateMetadata({ params }: Props) {
+  const news = await getNewsById(params.id);
+
+  if (!news) return notFound();
+
+  return {
+    title: news.title,
+    description:
+      news.content.length > 100
+        ? `${news.content.slice(0, 100)}...`
+        : news.content,
+  };
+}
+
 export default async function FullScreenInterceptedImagePage({
   params,
 }: Props) {
